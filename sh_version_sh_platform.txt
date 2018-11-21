@@ -1,0 +1,1956 @@
+
+
++++++++++++++++ show version [19:30:41.851 EDT Thu Sep 27 2018] +++++++++++++++
+
+
+Cisco IOS XR Software, Version 6.2.3[Default]
+Copyright (c) 2017 by Cisco Systems, Inc.
+
+ROM: System Bootstrap, Version 14.29(c) 1994-2014 by Cisco Systems,  Inc.
+
+dstswr102.rh.wpgrny uptime is 3 weeks, 2 days, 5 hours, 6 minutes
+System image file is "disk0:asr9k-os-mbi-6.2.3/0x100305/mbiasr9k-rsp3.vm"
+
+cisco ASR9K Series (Intel 686 F6M14S4) processor with 16777216K bytes of memory.
+Intel 686 F6M14S4 processor at 1900MHz, Revision 2.174
+ASR 9912 10 Line Card Slot Chassis with V3 AC PEM
+
+2 FastEthernet
+4 Management Ethernet
+4 HundredGigE
+4 DWDM controller(s)
+48 TenGigE
+375k bytes of non-volatile configuration memory.
+6220M bytes of hard disk.
+25012208k bytes of disk0: (Sector size 512 bytes).
+25012208k bytes of disk1: (Sector size 512 bytes).
+
+Configuration register on node 0/RP0/CPU0 is 0x2102
+Boot device on node 0/RP0/CPU0 is disk0:
+--------------- show version [19:30:45.545 EDT Thu Sep 27 2018] ---------------
+
+
+
++++++++ show install active summary [19:30:45.574 EDT Thu Sep 27 2018] ++++++++
+
+Default Profile:
+  SDRs:
+    Owner
+  Active Packages:
+    disk0:asr9k-mini-px-6.2.3
+    disk0:asr9k-services-infra-6.2.3
+    disk0:asr9k-9000v-nV-px-6.2.3
+    disk0:asr9k-bng-px-6.2.3
+    disk0:asr9k-doc-px-6.2.3
+    disk0:asr9k-fpd-px-6.2.3
+    disk0:asr9k-k9sec-px-6.2.3
+    disk0:asr9k-li-px-6.2.3
+    disk0:asr9k-mcast-px-6.2.3
+    disk0:asr9k-mgbl-px-6.2.3
+    disk0:asr9k-mpls-px-6.2.3
+    disk0:asr9k-optic-px-6.2.3
+    disk0:asr9k-services-px-6.2.3
+    disk0:asr9k-video-px-6.2.3
+    disk0:asr9k-px-6.2.3.CSCvi02639-1.0.0
+
+
+
+------- show install active summary [19:30:47.842 EDT Thu Sep 27 2018] --------
+
+
+
++++++++++++++++++ show sdr [19:30:47.882 EDT Thu Sep 27 2018] +++++++++++++++++
+
+
+
+
+SDR Inventory
+--------------
+
+Type       NodeName    NodeState         RedState   PartnerName
+---------------------------------------------------------------
+RP         0/RP0/CPU0  IOS XR RUN        Primary    0/RP1/CPU0  
+RP         0/RP1/CPU0  IOS XR RUN        Backup     0/RP0/CPU0  
+LC         0/0/CPU0    IOS XR RUN        Not-known  NONE        
+LC         0/2/CPU0    IOS XR RUN        Not-known  NONE        
+LC         0/9/CPU0    IOS XR RUN        Not-known  NONE        
+
+
+----------------- show sdr [19:30:48.092 EDT Thu Sep 27 2018] -----------------
+
+
+
++++++++++++ admin show platform [19:30:48.130 EDT Thu Sep 27 2018] ++++++++++++
+
+Node		Type			  State		   Config State
+-----------------------------------------------------------------------------
+0/RP0/CPU0      A99-RP2-TR(Active)        IOS XR RUN       PWR,NSHUT,MON
+0/RP1/CPU0      A99-RP2-TR(Standby)       IOS XR RUN       PWR,NSHUT,MON
+0/FT0/SP        ASR-9912-FAN              READY            
+0/FT1/SP        ASR-9912-FAN              READY            
+0/0/CPU0        A9K-2x100GE-TR            IOS XR RUN       PWR,NSHUT,MON
+0/2/CPU0        A9K-2x100GE-TR            IOS XR RUN       PWR,NSHUT,MON
+0/9/CPU0        A9K-48X10GE-1G-TR         IOS XR RUN       PWR,NSHUT,MON
+0/PS0/M0/SP     PWR-6KW-AC-V3             READY            PWR,NSHUT,MON
+0/PS0/M1/SP     PWR-6KW-AC-V3             READY            PWR,NSHUT,MON
+0/PS0/M2/SP     PWR-6KW-AC-V3             READY            PWR,NSHUT,MON
+0/PS1/M0/SP     PWR-6KW-AC-V3             READY            PWR,NSHUT,MON
+0/PS1/M1/SP     PWR-6KW-AC-V3             READY            PWR,NSHUT,MON
+0/PS1/M2/SP     PWR-6KW-AC-V3             READY            PWR,NSHUT,MON
+0/PS2/M0/SP     PWR-6KW-AC-V3             READY            PWR,NSHUT,MON
+0/PS2/M1/SP     PWR-6KW-AC-V3             READY            PWR,NSHUT,MON
+0/PS2/M2/SP     PWR-6KW-AC-V3             READY            PWR,NSHUT,MON
+0/FC0/SP        A99-SFC2                  OK               PWR,NSHUT,MON
+0/FC1/SP        A99-SFC2                  OK               PWR,NSHUT,MON
+0/FC2/SP        A99-SFC2                  OK               PWR,NSHUT,MON
+0/FC3/SP        A99-SFC2                  OK               PWR,NSHUT,MON
+0/FC4/SP        A99-SFC2                  OK               PWR,NSHUT,MON
+
+
+----------- admin show platform [19:30:48.703 EDT Thu Sep 27 2018] ------------
+
+
+
+------------ show route summary [19:30:52.844 EDT Thu Sep 27 2018] ------------
+
+
+
++++++++++++ admin show inventory [19:30:52.876 EDT Thu Sep 27 2018] +++++++++++
+
+NAME: "module 0/RP0/CPU0", DESCR: "ASR 99 Route Processor for Packet Transport"
+PID: A99-RP2-TR, VID: V02, SN: FOC2020N2J0
+
+NAME: "module 0/RP1/CPU0", DESCR: "ASR 99 Route Processor for Packet Transport"
+PID: A99-RP2-TR, VID: V05, SN: FOC2219NCJ2
+
+NAME: "fantray 0/FT0/SP", DESCR: "ASR 9912 Fan Tray"
+PID: ASR-9912-FAN, VID: V02, SN: FOC2220PE2J
+
+NAME: "fan0 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan1 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan2 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan3 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan4 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan5 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan6 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan7 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan8 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan9 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan10 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan11 0/FT0/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fantray 0/FT1/SP", DESCR: "ASR 9912 Fan Tray"
+PID: ASR-9912-FAN, VID: V02, SN: FOC2220PE2N
+
+NAME: "fan0 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan1 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan2 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan3 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan4 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan5 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan6 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan7 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan8 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan9 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan10 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "fan11 0/FT1/SP", DESCR: "ASR9K Generic Fan"
+PID: N/A, VID: N/A, SN: 
+
+NAME: "module 0/0/CPU0", DESCR: "2-port 100GE, Packet Transport Optimized LC"
+PID: A9K-2X100GE-TR, VID: V07, SN: FOC2001N9F1
+
+NAME: "module mau HundredGigE0/0/CPU0/0", DESCR: "100GBASE-LR4 CFP Module for SMF"
+PID: CFP-100G-LR4    , VID: V02 , SN: FNS20041NEW     
+
+NAME: "module mau HundredGigE0/0/CPU0/1", DESCR: "100GBASE-LR4 CFP Module for SMF"
+PID: CFP-100G-LR4    , VID: V02 , SN: FNS20041JZZ     
+
+NAME: "module 0/2/CPU0", DESCR: "2-port 100GE, Packet Transport Optimized LC"
+PID: A9K-2X100GE-TR, VID: V06, SN: FOC1818N1BK
+
+NAME: "module mau HundredGigE0/2/CPU0/0", DESCR: "100GBASE-LR4 CFP Module for SMF"
+PID: CFP-100G-LR4    , VID: V02 , SN: FNS17240KQA     
+
+NAME: "module mau HundredGigE0/2/CPU0/1", DESCR: "100GBASE-LR4 CFP Module for SMF"
+PID: CFP-100G-LR4    , VID: V02 , SN: FNS20070PSU     
+
+NAME: "module 0/9/CPU0", DESCR: "48X10G/1G Packet Transport Optimized LC"
+PID: A9K-48X10GE-1G-TR, VID: V01, SN: FOC2218N8HN
+
+NAME: "module mau TenGigE0/9/CPU0/0", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F2H     
+
+NAME: "module mau TenGigE0/9/CPU0/1", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F39     
+
+NAME: "module mau TenGigE0/9/CPU0/2", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231EHR     
+
+NAME: "module mau TenGigE0/9/CPU0/3", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F2S     
+
+NAME: "module mau TenGigE0/9/CPU0/4", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F6Z     
+
+NAME: "module mau TenGigE0/9/CPU0/5", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F3A     
+
+NAME: "module mau TenGigE0/9/CPU0/6", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231EME     
+
+NAME: "module mau TenGigE0/9/CPU0/7", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F0X     
+
+NAME: "module mau TenGigE0/9/CPU0/8", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F1F     
+
+NAME: "module mau TenGigE0/9/CPU0/9", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F70     
+
+NAME: "module mau TenGigE0/9/CPU0/11", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F8J     
+
+NAME: "module mau TenGigE0/9/CPU0/23", DESCR: "10GBASE-LR SFP+ Module for SMF"
+PID: SFP-10G-LR         , VID: V02 , SN: OPM22231F71     
+
+NAME: "power-module 0/PS0/M0/SP", DESCR: "6kW AC V3 Power Module"
+PID: PWR-6KW-AC-V3, VID: V03, SN: DTM213101PT
+
+NAME: "power-module 0/PS0/M1/SP", DESCR: "6kW AC V3 Power Module"
+PID: PWR-6KW-AC-V3, VID: V03, SN: DTM213101UP
+
+NAME: "power-module 0/PS0/M2/SP", DESCR: "6kW AC V3 Power Module"
+PID: PWR-6KW-AC-V3, VID: V03, SN: DTM213101UC
+
+NAME: "power-module 0/PS1/M0/SP", DESCR: "6kW AC V3 Power Module"
+PID: PWR-6KW-AC-V3, VID: V03, SN: DTM213101TX
+
+NAME: "power-module 0/PS1/M1/SP", DESCR: "6kW AC V3 Power Module"
+PID: PWR-6KW-AC-V3, VID: V03, SN: DTM213101VF
+
+NAME: "power-module 0/PS1/M2/SP", DESCR: "6kW AC V3 Power Module"
+PID: PWR-6KW-AC-V3, VID: V03, SN: DTM213101UW
+
+NAME: "power-module 0/PS2/M0/SP", DESCR: "6kW AC V3 Power Module"
+PID: PWR-6KW-AC-V3, VID: V03, SN: DTM21430097
+
+NAME: "power-module 0/PS2/M1/SP", DESCR: "6kW AC V3 Power Module"
+PID: PWR-6KW-AC-V3, VID: V03, SN: DTM213101VH
+
+NAME: "power-module 0/PS2/M2/SP", DESCR: "6kW AC V3 Power Module"
+PID: PWR-6KW-AC-V3, VID: V03, SN: DTM213101UH
+
+NAME: "module 0/FC0/SP", DESCR: "ASR 9900 Series Switch Fabric Card 2"
+PID: A99-SFC2, VID: V02 , SN: FOC2221NDVS
+
+NAME: "module 0/FC1/SP", DESCR: "ASR 9900 Series Switch Fabric Card 2"
+PID: A99-SFC2, VID: V02 , SN: FOC2221NDTT
+
+NAME: "module 0/FC2/SP", DESCR: "ASR 9900 Series Switch Fabric Card 2"
+PID: A99-SFC2, VID: V02 , SN: FOC2147PC9A
+
+NAME: "module 0/FC3/SP", DESCR: "ASR 9900 Series Switch Fabric Card 2"
+PID: A99-SFC2, VID: V02 , SN: FOC2221NDU2
+
+NAME: "module 0/FC4/SP", DESCR: "ASR 9900 Series Switch Fabric Card 2"
+PID: A99-SFC2, VID: V02 , SN: FOC2221NDRY
+
+NAME: "chassis ASR-9912", DESCR: "ASR 9912 10 Line Card Slot Chassis with V3 AC PEM"
+PID: ASR-9912, VID: V01, SN: FOX2138P8UE
+
+
+
+----------- admin show inventory [19:31:01.409 EDT Thu Sep 27 2018] -----------
+
+
+
+
+
++++++ show hw-module fpd location all [19:31:01.708 EDT Thu Sep 27 2018] ++++++
+
+
+===================================== ==========================================
+                                      Existing Field Programmable Devices
+                                      ==========================================
+                                        HW                       Current SW Upg/
+Location     Card Type                Version Type Subtype Inst   Version   Dng?
+============ ======================== ======= ==== ======= ==== =========== ====
+0/RP0/CPU0   A99-RP2-TR                 1.0   lc   cbc     0      35.12     No 
+                                              lc   rommon  0      14.29     No 
+                                              lc   fpga2   0       0.57     No 
+                                              lc   fsbl    0       1.103    No 
+                                              lc   lnxfw   0       1.103    No 
+                                              lc   fpga3   0       0.16     No 
+                                              lc   fpga4   0       0.16     No 
+                                              lc   fpga5   0       0.12     No 
+                                              lc   fpga6   0       0.06     No 
+--------------------------------------------------------------------------------
+0/RP0/CPU0   A99-RP2-TR                 1.0   lc   cbc     1      35.12     No 
+--------------------------------------------------------------------------------
+0/FC0/SP     A99-SFC2                   1.0   fc   cbc     0      37.20     No 
+                                              fc   fcfsbl  0       1.100    No 
+                                              fc   fpga8   0       0.37     No 
+                                              fc   fclnxfw 0       1.100    No 
+--------------------------------------------------------------------------------
+0/FC1/SP     A99-SFC2                   1.0   fc   cbc     1      37.20     No 
+                                              fc   fcfsbl  1       1.100    No 
+                                              fc   fpga8   1       0.37     No 
+                                              fc   fclnxfw 1       1.100    No 
+--------------------------------------------------------------------------------
+0/FC2/SP     A99-SFC2                   1.0   fc   cbc     2      37.20     No 
+                                              fc   fcfsbl  2       1.100    No 
+                                              fc   fpga8   2       0.37     No 
+                                              fc   fclnxfw 2       1.100    No 
+--------------------------------------------------------------------------------
+0/FC3/SP     A99-SFC2                   1.0   fc   cbc     3      37.20     No 
+                                              fc   fcfsbl  3       1.100    No 
+                                              fc   fpga8   3       0.37     No 
+                                              fc   fclnxfw 3       1.100    No 
+--------------------------------------------------------------------------------
+0/FC4/SP     A99-SFC2                   1.0   fc   cbc     4      37.20     No 
+                                              fc   fcfsbl  4       1.100    No 
+                                              fc   fpga8   4       0.37     No 
+                                              fc   fclnxfw 4       1.100    No 
+--------------------------------------------------------------------------------
+0/FT0/SP     ASR-9912-FAN               1.0   ft   cbc     7      31.05     No 
+--------------------------------------------------------------------------------
+0/FT1/SP     ASR-9912-FAN               1.0   ft   cbc     8      31.05     No 
+--------------------------------------------------------------------------------
+0/BPID0/SP   ASR-9912-BPID2             1.0   bp   cbc     11      7.105    No 
+--------------------------------------------------------------------------------
+0/PS0/M0/SP  PWR-6KW-AC-V3              1.0   pm   fpga11  13      4.04^    No 
+                                              pm   fpga12  13      4.02^    No 
+                                              pm   fpga13  13      4.03^    No 
+--------------------------------------------------------------------------------
+0/PS0/M1/SP  PWR-6KW-AC-V3              1.0   pm   fpga11  14      4.04^    No 
+                                              pm   fpga12  14      4.02^    No 
+                                              pm   fpga13  14      4.03^    No 
+--------------------------------------------------------------------------------
+0/PS0/M2/SP  PWR-6KW-AC-V3              1.0   pm   fpga11  15      4.04^    No 
+                                              pm   fpga12  15      4.02^    No 
+                                              pm   fpga13  15      4.03^    No 
+--------------------------------------------------------------------------------
+0/PS1/M0/SP  PWR-6KW-AC-V3              1.0   pm   fpga11  17      4.04^    No 
+                                              pm   fpga12  17      4.02^    No 
+                                              pm   fpga13  17      4.03^    No 
+--------------------------------------------------------------------------------
+0/PS1/M1/SP  PWR-6KW-AC-V3              1.0   pm   fpga11  18      4.04^    No 
+                                              pm   fpga12  18      4.02^    No 
+                                              pm   fpga13  18      4.03^    No 
+--------------------------------------------------------------------------------
+0/PS1/M2/SP  PWR-6KW-AC-V3              1.0   pm   fpga11  19      4.04^    No 
+                                              pm   fpga12  19      4.02^    No 
+                                              pm   fpga13  19      4.03^    No 
+--------------------------------------------------------------------------------
+0/PS2/M0/SP  PWR-6KW-AC-V3              1.0   pm   fpga11  21      4.04^    No 
+                                              pm   fpga12  21      4.02^    No 
+                                              pm   fpga13  21      4.03^    No 
+--------------------------------------------------------------------------------
+0/PS2/M1/SP  PWR-6KW-AC-V3              1.0   pm   fpga11  22      4.04^    No 
+                                              pm   fpga12  22      4.02^    No 
+                                              pm   fpga13  22      4.03^    No 
+--------------------------------------------------------------------------------
+0/PS2/M2/SP  PWR-6KW-AC-V3              1.0   pm   fpga11  23      4.04^    No 
+                                              pm   fpga12  23      4.02^    No 
+                                              pm   fpga13  23      4.03^    No 
+--------------------------------------------------------------------------------
+0/RP1/CPU0   A99-RP2-TR                 1.0   lc   cbc     0      35.12     No 
+                                              lc   rommon  0      14.29     No 
+                                              lc   fpga2   0       0.57     No 
+                                              lc   fsbl    0       1.103    No 
+                                              lc   lnxfw   0       1.103    No 
+                                              lc   fpga3   0       0.16     No 
+                                              lc   fpga4   0       0.16     No 
+                                              lc   fpga5   0       0.12     No 
+                                              lc   fpga6   0       0.06     No 
+--------------------------------------------------------------------------------
+0/RP1/CPU0   A99-RP2-TR                 1.0   lc   cbc     1      35.12     No 
+--------------------------------------------------------------------------------
+0/0/CPU0     A9K-2x100GE-TR             1.0   lc   cbc     0      21.111    No 
+                                              lc   fpga2   0       1.08     No 
+                                              lc   fpga3   0       1.05     No 
+                                              lc   fpga5   0       1.04     No 
+                                              lc   fpga6   0      41.00     No 
+                                              lc   fpga4   0       1.04     No 
+                                              lc   cpld1   0       1.03     No 
+                                              lc   rommon  0       3.03     No 
+--------------------------------------------------------------------------------
+0/2/CPU0     A9K-2x100GE-TR             1.0   lc   cbc     0      21.111    No 
+                                              lc   fpga5   0       1.04     No 
+                                              lc   fpga3   0       1.05     No 
+                                              lc   fpga6   0      41.00     No 
+                                              lc   cpld1   0       1.03     No 
+                                              lc   fpga2   0       1.08     No 
+                                              lc   fpga4   0       1.04     No 
+                                              lc   rommon  0       3.03     No 
+--------------------------------------------------------------------------------
+0/9/CPU0     A9K-48X10GE-1G-TR          1.0   lc   cbc     0      47.03     No 
+                                              lc   rommon  0      18.24     No 
+                                              lc   fpga2   0       1.87     No 
+                                              lc   fsbl    0       1.104    No 
+                                              lc   lnxfw   0       1.104    No 
+                                              lc   fpga3   0       1.00     No 
+                                              lc   fpga4   0       1.04     No 
+--------------------------------------------------------------------------------
+0/9/CPU0     A9K-48X10GE-1G-TR          1.0   lc   fpga3   1       1.00     No 
+--------------------------------------------------------------------------------
+NOTES:
+1.  ^ One or more FPD will be intentionally skipped from upgrade using CLI with option "all" or during "Auto fpd".
+      It can be upgraded only using the "admin> upgrade hw-module fpd <fpd> location <loc>" CLI with exact location.
+
+
+----- show hw-module fpd location all [19:31:02.137 EDT Thu Sep 27 2018] ------
+
+
+
+++++++++++++ admin show env all [19:31:02.170 EDT Thu Sep 27 2018] ++++++++++++
+
+
+Temperature Information
+---------------------------------------------
+
+R/S/I 	Modules	Sensor			(deg C)
+0/RP0/*
+	host	die_CPU			43.0
+	host	die_FabArbiter0		58.0
+	host	die_FIA			59.0
+	host	die_PCH			56.0
+	host	die_DIMM0		37.0
+	host	die_DIMM1		38.0
+	host	die_DIMM2		35.0
+	host	die_DIMM3		35.0
+	host	die_FabSwitch0		52.0
+	host	air_inlet		34.8
+	host	sm15_0_downstream	51.8
+	host	sm15_0_inlet		46.1
+	host	sm15_1_upstream		44.3
+	host	air_outlet		43.1
+	host	Inlet0			35.0
+	host	Hotspot0		51.8
+                              
+0/RP1/*
+	host	die_CPU			49.0
+	host	die_FabArbiter0		70.5
+	host	die_FIA			77.0
+	host	die_PCH			59.0
+	host	die_DIMM0		46.0
+	host	die_DIMM1		46.0
+	host	die_DIMM2		40.0
+	host	die_DIMM3		39.0
+	host	die_FabSwitch0		60.0
+	host	air_inlet		40.0
+	host	sm15_0_downstream	55.7
+	host	sm15_0_inlet		49.4
+	host	sm15_1_upstream		42.5
+	host	air_outlet		50.0
+	host	Inlet0			40.0
+	host	Hotspot0		55.6
+                              
+0/0/*
+	host	die_NP0			66.0
+	host	die_NP1			71.5
+	host	die_NP2			72.0
+	host	die_NP3			67.5
+	host	die_MAC0		63.1
+	host	die_MAC1		59.7
+	host	die_IMUX0		61.1
+	host	die_IMUX1		65.1
+	host	die_FIA0		71.0
+	host	die_FIA1		66.0
+	host	die_FIA2		70.5
+	host	die_FIA3		66.5
+	host	die_EMUX0		66.8
+	host	die_EMUX1		65.1
+	host	die_FabSwitch		75.0
+	host	db_optics		35.4
+	host	db_emux			60.9
+	host	db_imux			61.5
+	host	db_mac			50.7
+	host	bb_inlet		37.3
+	host	bb_hotspot_0		56.8
+	host	bb_exhoust_0		45.4
+	host	bb_exhoust_1		55.5
+	host	bb_hotspot_1		54.1
+	host	db_np2			60.6
+	host	Inlet0			37.0
+	host	Hotspot0		56.7
+                              
+
+0/2/*
+	host	die_NP0			51.0
+	host	die_NP1			54.5
+	host	die_NP2			56.5
+	host	die_NP3			53.0
+	host	die_MAC0		55.2
+	host	die_MAC1		54.7
+	host	die_IMUX0		44.1
+	host	die_IMUX1		50.3
+	host	die_FIA0		59.0
+	host	die_FIA1		52.0
+	host	die_FIA2		57.0
+	host	die_FIA3		58.0
+	host	die_EMUX0		50.8
+	host	die_EMUX1		46.9
+	host	die_FabSwitch		66.0
+	host	db_optics		31.0
+	host	db_emux			43.8
+	host	db_imux			47.1
+	host	db_mac			44.8
+	host	bb_inlet		28.4
+	host	bb_hotspot_0		43.3
+	host	bb_exhoust_0		35.1
+	host	bb_exhoust_1		42.1
+	host	bb_hotspot_1		44.9
+	host	db_np2			46.1
+	host	Inlet0			28.4
+	host	Hotspot0		43.3
+                              
+
+
+
+
+
+
+0/9/*
+	host	die_NP0			57.5
+	host	die_NP1			46.0
+	host	die_FabArbiter		57.0
+	host	die_Lewis		61.5
+	host	die_FIA0		62.0
+	host	die_FIA1		57.0
+	host	die_FabSwitch		64.0
+	host	die_CPU			45.0
+	host	bb_air_inlet		34.3
+	host	bb_outlet		54.5
+	host	bb_hotspot0		41.0
+	host	bb_hotspot1		40.8
+	host	bb_hotspot2		32.0
+	host	Inlet0			34.5
+	host	Hotspot0		54.5
+                              
+0/FC0/*
+	host	die_FabSwitch0		40.0
+	host	die_FabSwitch1		38.0
+	host	Inlet0			34.2
+	host	Hotspot0		34.8
+                              
+0/FC1/*
+	host	die_FabSwitch0		36.0
+	host	die_FabSwitch1		34.0
+	host	Inlet0			31.5
+	host	Hotspot0		31.1
+                              
+0/FC2/*
+	host	die_FabSwitch0		36.0
+	host	die_FabSwitch1		34.0
+	host	Inlet0			31.1
+	host	Hotspot0		31.0
+                              
+0/FC3/*
+	host	die_FabSwitch0		40.0
+	host	die_FabSwitch1		34.0
+	host	Inlet0			32.5
+	host	Hotspot0		32.9
+                              
+0/FC4/*
+	host	die_FabSwitch0		42.0
+	host	die_FabSwitch1		36.0
+	host	Inlet0			35.0
+	host	Hotspot0		36.5
+                              
+
+
+
+0/FT0/*
+	host	Inlet0			32.0
+	host	Hotspot0		33.5
+                              
+0/FT1/*
+	host	Inlet0			35.6
+	host	Hotspot0		37.1
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+Active temperature Alarms
+---------------------------------------------
+
+R/S/I	Sensor          Alarm    			Raised at (time) 
+
+Voltage Information
+---------------------------------------------
+
+R/S/I 	Modules	Sensor			 (mV)	Margin
+0/RP0/*
+	host	VP3P3_CAN		 3299	n/a
+	host	VP2P5			 2500	n/a
+	host	VP3P3			 3299	n/a
+	host	VP1P2			 1199	n/a
+	host	VP1P8			 1818	n/a
+	host	VP5P0			 5001	n/a
+	host	VP7P0			 6999	n/a
+	host	VP3P3_OCXO		 3299	n/a
+	host	VP1P8_OCXO		 1800	n/a
+	host	VP1P05			 1050	n/a
+	host	VP1P8_PCH		 1800	n/a
+	host	VP1P5_PCH		 1499	n/a
+	host	VP1P05_PCH		 1061	n/a
+	host	VP1P8A			 1809	n/a
+	host	PVCCD_AB		 1502	n/a
+	host	VP1P05_VTT_CPU1		 1050	n/a
+	host	PVCCP_CPU1		  830	n/a
+	host	VP1P8_CPU1		 1800	n/a
+	host	VP0P96_PVSA		  986	n/a
+	host	VP1P1_PCH		 1099	n/a
+	host	VP0P75_TS		  738	n/a
+	host	P0_75_B			  751	n/a
+	host	P0_75_A			  751	n/a
+	host	VP1P2_MGTAVTT_OPT	 1200	n/a
+	host	VP1P2_MGTAVTT_OMG	 1199	n/a
+	host	VP1P2_MGTAVTT_ALP	 1200	n/a
+	host	VP1P0_MGTAVCC_IPU	 1000	n/a
+	host	VP1P0_MGTAVCC_OPT	  999	n/a
+	host	VP1P0_MGTAVCC_OMG	  999	n/a
+	host	VP1P0_MGTAVCC_ALP	  999	n/a
+	host	PVCCD_CD		 1505	n/a
+	host	SM15_0_PLLVDD_LDO_PG	 2465	n/a
+	host	TS_PLLVDD_LDO_PG	 1463	n/a
+	host	IPU_VTT_PWROK		 3269	n/a
+	host	VP1P8_MGTVCCAUX_CHA	 1799	n/a
+	host	VP1P2_MGTAVTT_CHA	 1200	n/a
+	host	VP1P2_MGTAVTT_IPU	 1200	n/a
+	host	VP1P0A			 1000	n/a
+	host	VP1P0B			 1000	n/a
+	host	VP1P0D			 1005	n/a
+	host	VP0P95			  949	n/a
+	host	VP0P9B			  899	n/a
+	host	VP1P0			 1000	n/a
+	host	1_5_PCH			 1500	n/a
+	host	VP18_LDO		 1789	n/a
+	host	VP18_OPD_LDO_PG		 1789	n/a
+	host	VP18_OMG_LDO_PG		 1792	n/a
+	host	VP0P9C			  900	n/a
+	host	PMOD9_0_9V_VSENSE	  875	n/a
+	host	PMOD10_0_9V_VSENSE	  875	n/a
+	host	PMOD11_0_9VA_VSENSE	  899	n/a
+	host	PMOD12_0_9VA_VSENSE	  899	n/a
+
+0/RP1/*
+	host	VP3P3_CAN		 3300	n/a
+	host	VP2P5			 2500	n/a
+	host	VP3P3			 3299	n/a
+	host	VP1P2			 1199	n/a
+	host	VP1P8			 1817	n/a
+	host	VP5P0			 5000	n/a
+	host	VP7P0			 7000	n/a
+	host	VP3P3_OCXO		 3299	n/a
+	host	VP1P8_OCXO		 1799	n/a
+	host	VP1P05			 1050	n/a
+	host	VP1P8_PCH		 1799	n/a
+	host	VP1P5_PCH		 1499	n/a
+	host	VP1P05_PCH		 1052	n/a
+	host	VP1P8A			 1809	n/a
+	host	PVCCD_AB		 1501	n/a
+	host	VP1P05_VTT_CPU1		 1049	n/a
+	host	PVCCP_CPU1		  805	n/a
+	host	VP1P8_CPU1		 1800	n/a
+	host	VP0P96_PVSA		  966	n/a
+	host	VP1P1_PCH		 1099	n/a
+	host	VP0P75_TS		  736	n/a
+	host	P0_75_B			  751	n/a
+	host	P0_75_A			  750	n/a
+	host	VP1P2_MGTAVTT_OPT	 1200	n/a
+	host	VP1P2_MGTAVTT_OMG	 1199	n/a
+	host	VP1P2_MGTAVTT_ALP	 1199	n/a
+	host	VP1P0_MGTAVCC_IPU	 1000	n/a
+	host	VP1P0_MGTAVCC_OPT	  999	n/a
+	host	VP1P0_MGTAVCC_OMG	 1000	n/a
+	host	VP1P0_MGTAVCC_ALP	 1000	n/a
+	host	PVCCD_CD		 1504	n/a
+	host	SM15_0_PLLVDD_LDO_PG	 2466	n/a
+	host	TS_PLLVDD_LDO_PG	 1460	n/a
+	host	IPU_VTT_PWROK		 3269	n/a
+	host	VP1P8_MGTVCCAUX_CHA	 1799	n/a
+	host	VP1P2_MGTAVTT_CHA	 1199	n/a
+	host	VP1P2_MGTAVTT_IPU	 1199	n/a
+	host	VP1P0A			 1000	n/a
+	host	VP1P0B			 1000	n/a
+	host	VP1P0D			 1004	n/a
+	host	VP0P95			  950	n/a
+	host	VP0P9B			  899	n/a
+	host	VP1P0			 1000	n/a
+	host	1_5_PCH			 1500	n/a
+	host	VP18_LDO		 1780	n/a
+	host	VP18_OPD_LDO_PG		 1780	n/a
+	host	VP18_OMG_LDO_PG		 1780	n/a
+	host	VP0P9C			  899	n/a
+	host	PMOD9_0_9V_VSENSE	  925	n/a
+	host	PMOD10_0_9V_VSENSE	  924	n/a
+	host	PMOD11_0_9VA_VSENSE	  875	n/a
+	host	PMOD12_0_9VA_VSENSE	  875	n/a
+
+0/0/*
+	host	VP3P3_CAN		 3299	n/a
+	host	VP1P0_SAC_CORE		 1000	n/a
+	host	VP1P0_SAC_VDDA		  999	n/a
+	host	VP1P0_SAC_VDDD		 1000	n/a
+	host	VP1P2_SAC_VDDT		 1200	n/a
+	host	VP1P8_SAC_VDDR		 1798	n/a
+	host	VP1P0_LAN		 1000	n/a
+	host	VP1P0_SKT1_CORE		 1000	n/a
+	host	VP1P0_SKT1_IO		 1000	n/a
+	host	VP1P5_SKT1_IO		 1500	n/a
+	host	VP2P5_SKT1_IO		 2499	n/a
+	host	VP2P5			 2499	n/a
+	host	VP3P3			 3299	n/a
+	host	VP1P2			 1200	n/a
+	host	VP1P5			 1500	n/a
+	host	VP1P8			 1800	n/a
+	host	VP5P0			 5000	n/a
+	host	VP7P0			 7000	n/a
+	host	VP3P3_ZL_VDD		 3300	n/a
+	host	VP0P98_IMUX0_CORE	  979	n/a
+	host	VP0P98_EMUX0_CORE	  979	n/a
+	host	VP1P0_SKT0_CORE		 1000	n/a
+	host	VP1P0_SKT0_IO		  999	n/a
+	host	VP1P5_SKT0_IO		 1500	n/a
+	host	VP2P5_SKT0_IO		 2500	n/a
+	host	VP1P8_ZL_VCORE		 1799	n/a
+	host	VP1P0_N0_CORE		 1049	n/a
+	host	VP1P5_N0_IO		 1500	n/a
+	host	VP0P9_T0_CORE		  899	n/a
+	host	VP0P75_N0_VTT		  750	n/a
+	host	VP1P0_N1_CORE		 1049	n/a
+	host	VP1P5_N1_IO		 1500	n/a
+	host	VP1P8_N1_IO		 1800	n/a
+	host	VP0P9_T1_CORE		  900	n/a
+	host	VP0P75_N1_VTT		  749	n/a
+	host	VP1P2_EMUX0_AVTT	 1200	n/a
+	host	VP1P03_EMUX0_AVCC	 1000	n/a
+	host	VP1P2_IMUX0_AVTT	 1200	n/a
+	host	VP1P2_LAN_VTT		 1200	n/a
+	host	VP1P03_IMUX0_AVCC	  999	n/a
+	host	VP2P5_IMUX0_SW		 1797	n/a
+	host	VP1P5_IMUX0_SW		 1499	n/a
+	host	VP2P5_EMUX0_SW		 1797	n/a
+	host	VP1P5_EMUX0_SW		 1498	n/a
+	host	VP1P0_N2_CORE_DB	 1050	n/a
+	host	VP1P5_N2_IO_DB		 1499	n/a
+	host	VP0P9_T2_CORE_DB	  899	n/a
+	host	VP0P75_N2_VTT_DB	  746	n/a
+	host	VP2P5_SKTN2_IO_DB	 2500	n/a
+	host	VP1P8_N23_IO_DB		 1800	n/a
+	host	VP5P0_DB		 5000	n/a
+	host	VP0P98_IMUX1_CORE_DB	  979	n/a
+	host	VP1P0_N3_CORE_DB	 1049	n/a
+	host	VP1P5_N3_IO_DB		 1500	n/a
+	host	VP0P9_T3_CORE_DB	  900	n/a
+	host	VP0P75_N3_VTT_DB	  746	n/a
+	host	VP2P5_SKTN3_IO_DB	 2500	n/a
+	host	VP1P03_EMUX1_AVCC_DB	 1000	n/a
+	host	VP1P2_EMUX1_AVTT_DB	 1200	n/a
+	host	VP0P98_EMUX1_CORE_DB	  980	n/a
+	host	VP0P98_MAC0_CORE_DB	  979	n/a
+	host	VP1P03_MAC0_AVCC_DB	 1000	n/a
+	host	VP1P2_MAC0_AVTT_DB	 1199	n/a
+	host	VP0P98_MAC1_CORE_DB	  979	n/a
+	host	VP1P03_MAC1_AVCC_DB	  999	n/a
+	host	VP1P2_MAC1_AVTT_DB	 1199	n/a
+	host	VP0P9_PHY_DB		  900	n/a
+	host	VP7P0_DB		 7000	n/a
+	host	VP1P0_SKT2_CORE_DB	 1000	n/a
+	host	VP1P0_SKT2_IO_DB	 1000	n/a
+	host	VP1P5_SKT2_IO_DB	 1500	n/a
+	host	VP1P0_SKT3_CORE_DB	 1000	n/a
+	host	VP1P0_SKT3_IO_DB	 1000	n/a
+	host	VP1P5_SKT3_IO_DB	 1499	n/a
+	host	VP1P03_IMUX1_AVCC_DB	 1000	n/a
+	host	VP1P2_IMUX1_AVTT_DB	 1199	n/a
+	host	VP3P3_DB		 3333	n/a
+	host	VP2P5_DB		 2500	n/a
+	host	VP1P8_DB		 1800	n/a
+	host	VP1P5_DB		 1500	n/a
+	host	VP1P2_DB		 1199	n/a
+	host	VP1P0_CPU_CORE_DB	 1000	n/a
+	host	VP1P0_CPU_PL_DB		 1020	n/a
+	host	VP2P5_IMUX1_SW_DB	 1793	n/a
+	host	VP1P5_IMUX1_SW_DB	 1495	n/a
+	host	VP2P5_EMUX1_SW_DB	 1792	n/a
+	host	VP1P5_EMUX1_SW_DB	 1495	n/a
+	host	VP2P5_MAC0_SW_DB	 1805	n/a
+	host	VP2P5_MAC1_SW_DB	 1810	n/a
+	host	VP1P2_LAMBI_MGT_DB	 1205	n/a
+	host	VP1P8_USB_LDO		 1805	n/a
+	host	VP0P75_CPU		  750	n/a
+
+
+0/2/*
+	host	VP3P3_CAN		 3301	n/a
+	host	VP1P0_SAC_CORE		 1000	n/a
+	host	VP1P0_SAC_VDDA		 1000	n/a
+	host	VP1P0_SAC_VDDD		  999	n/a
+	host	VP1P2_SAC_VDDT		 1199	n/a
+	host	VP1P8_SAC_VDDR		 1800	n/a
+	host	VP1P0_LAN		 1000	n/a
+	host	VP1P0_SKT1_CORE		 1000	n/a
+	host	VP1P0_SKT1_IO		  999	n/a
+	host	VP1P5_SKT1_IO		 1499	n/a
+	host	VP2P5_SKT1_IO		 2500	n/a
+	host	VP2P5			 2500	n/a
+	host	VP3P3			 3300	n/a
+	host	VP1P2			 1200	n/a
+	host	VP1P5			 1499	n/a
+	host	VP1P8			 1800	n/a
+	host	VP5P0			 5000	n/a
+	host	VP7P0			 6999	n/a
+	host	VP3P3_ZL_VDD		 3300	n/a
+	host	VP0P98_IMUX0_CORE	 1030	n/a
+	host	VP0P98_EMUX0_CORE	  979	n/a
+	host	VP1P0_SKT0_CORE		  999	n/a
+	host	VP1P0_SKT0_IO		 1000	n/a
+	host	VP1P5_SKT0_IO		 1500	n/a
+	host	VP2P5_SKT0_IO		 2500	n/a
+	host	VP1P8_ZL_VCORE		 1800	n/a
+	host	VP1P0_N0_CORE		 1049	n/a
+	host	VP1P5_N0_IO		 1500	n/a
+	host	VP0P9_T0_CORE		  899	n/a
+	host	VP0P75_N0_VTT		  749	n/a
+	host	VP1P0_N1_CORE		 1049	n/a
+	host	VP1P5_N1_IO		 1500	n/a
+	host	VP1P8_N1_IO		 1800	n/a
+	host	VP0P9_T1_CORE		  899	n/a
+	host	VP0P75_N1_VTT		  747	n/a
+	host	VP1P2_EMUX0_AVTT	 1200	n/a
+	host	VP1P03_EMUX0_AVCC	 1030	n/a
+	host	VP1P2_IMUX0_AVTT	 1200	n/a
+	host	VP1P2_LAN_VTT		 1200	n/a
+	host	VP1P03_IMUX0_AVCC	 1029	n/a
+	host	VP2P5_IMUX0_SW		 2497	n/a
+	host	VP1P5_IMUX0_SW		 1498	n/a
+	host	VP2P5_EMUX0_SW		 2493	n/a
+	host	VP1P5_EMUX0_SW		 1500	n/a
+	host	VP1P0_N2_CORE_DB	 1050	n/a
+	host	VP1P5_N2_IO_DB		 1500	n/a
+	host	VP0P9_T2_CORE_DB	  900	n/a
+	host	VP0P75_N2_VTT_DB	  747	n/a
+	host	VP2P5_SKTN2_IO_DB	 2500	n/a
+	host	VP1P8_N23_IO_DB		 1800	n/a
+	host	VP5P0_DB		 5000	n/a
+	host	VP0P98_IMUX1_CORE_DB	 1029	n/a
+	host	VP1P0_N3_CORE_DB	 1050	n/a
+	host	VP1P5_N3_IO_DB		 1500	n/a
+	host	VP0P9_T3_CORE_DB	  900	n/a
+	host	VP0P75_N3_VTT_DB	  747	n/a
+	host	VP2P5_SKTN3_IO_DB	 2499	n/a
+	host	VP1P03_EMUX1_AVCC_DB	 1030	n/a
+	host	VP1P2_EMUX1_AVTT_DB	 1200	n/a
+	host	VP0P98_EMUX1_CORE_DB	  980	n/a
+	host	VP0P98_MAC0_CORE_DB	  979	n/a
+	host	VP1P03_MAC0_AVCC_DB	 1030	n/a
+	host	VP1P2_MAC0_AVTT_DB	 1200	n/a
+	host	VP0P98_MAC1_CORE_DB	  979	n/a
+	host	VP1P03_MAC1_AVCC_DB	 1030	n/a
+	host	VP1P2_MAC1_AVTT_DB	 1199	n/a
+	host	VP0P9_PHY_DB		  899	n/a
+	host	VP7P0_DB		 7000	n/a
+	host	VP1P0_SKT2_CORE_DB	 1000	n/a
+	host	VP1P0_SKT2_IO_DB	  999	n/a
+	host	VP1P5_SKT2_IO_DB	 1500	n/a
+	host	VP1P0_SKT3_CORE_DB	 1000	n/a
+	host	VP1P0_SKT3_IO_DB	 1000	n/a
+	host	VP1P5_SKT3_IO_DB	 1500	n/a
+	host	VP1P03_IMUX1_AVCC_DB	 1029	n/a
+	host	VP1P2_IMUX1_AVTT_DB	 1200	n/a
+	host	VP3P3_DB		 3333	n/a
+	host	VP2P5_DB		 2500	n/a
+	host	VP1P8_DB		 1800	n/a
+	host	VP1P5_DB		 1500	n/a
+	host	VP1P2_DB		 1200	n/a
+	host	VP1P0_CPU_CORE_DB	 1000	n/a
+	host	VP1P0_CPU_PL_DB		 1009	n/a
+	host	VP2P5_IMUX1_SW_DB	 2497	n/a
+	host	VP1P5_IMUX1_SW_DB	 1495	n/a
+	host	VP2P5_EMUX1_SW_DB	 2499	n/a
+	host	VP1P5_EMUX1_SW_DB	 1496	n/a
+	host	VP2P5_MAC0_SW_DB	 2474	n/a
+	host	VP2P5_MAC1_SW_DB	 2491	n/a
+	host	VP1P2_LAMBI_MGT_DB	 1200	n/a
+	host	VP1P8_USB_LDO		 1804	n/a
+	host	VP0P75_CPU		  750	n/a
+
+
+
+
+
+
+
+0/9/*
+	host	VP3P3_CAN		 3282	n/a
+	host	VP1P2_SAC_VDDT		 1202	n/a
+	host	VP1P8_SAC_VDDR		 1806	n/a
+	host	VP2P5			 2503	n/a
+	host	VP3P3			 3304	n/a
+	host	VP1P5			 1500	n/a
+	host	VP1P8			 1801	n/a
+	host	VP5P0			 4997	n/a
+	host	VP7P0			 7008	n/a
+	host	VP3P3_ZL_VDD		 3300	n/a
+	host	VP1P8_ZL_VCORE		 1800	n/a
+	host	VP1P8_CPU		 1797	n/a
+	host	VP1P5_CPU		 1500	n/a
+	host	VP1P0_ARB_VDD		 1000	n/a
+	host	VP0P9_TS1_VDD		  900	n/a
+	host	VP1P5_TS1_VDDH		 1500	n/a
+	host	VP1P0_TS1_AVDD		  999	n/a
+	host	VP0P75_TS1_VTT		  749	n/a
+	host	VP2P5_TS1_VDDH		 2494	n/a
+	host	VP1P0_TS1_PLVDD		 1000	n/a
+	host	VP1P7_CPU		 1701	n/a
+	host	VP1P0_IPU		  999	n/a
+	host	VP0P9_PCIE		  899	n/a
+	host	VP1P05_CPU		 1050	n/a
+	host	VP1P2_NIANTIC		 1202	n/a
+	host	VP0P9_SM15_VDD		  850	n/a
+	host	VP1P0_SM15_AVDD		 1000	n/a
+	host	VP1P0_SM15_PLVDD	 1000	n/a
+	host	VP1P5_TS0_VDDH		 1498	n/a
+	host	VP1P0_TS0_AVDD		 1001	n/a
+	host	VP0P75_TS0_VTT		  748	n/a
+	host	VP2P5_TS0_VDDH		 2503	n/a
+	host	VP1P0_NP0_CORE		  963	n/a
+	host	VP1P5_NP0_IO		 1500	n/a
+	host	VP1P8_NP0_IO		 1801	n/a
+	host	VP0P75_NP0_VTT		  748	n/a
+	host	VP3P3_RTC		 3294	n/a
+	host	VP0P75_NP1_VTT		  750	n/a
+	host	VP1P8_NP1_IO		 1798	n/a
+	host	VP1P5_NP1_IO		 1500	n/a
+	host	VP1P0_NP1_CORE		  969	n/a
+	host	VP3P3_CPU		 3313	n/a
+	host	VP1P2_CPU		 1202	n/a
+	host	VP1P3_CPU		 1300	n/a
+	host	VP0P6_CPU		  602	n/a
+	host	VP1P0_TS0_PLVDD		 1000	n/a
+	host	VP3P3_SP		 3300	n/a
+	host	VP1P0_PHY2		 1000	n/a
+	host	VP1P0_PHY1		  999	n/a
+	host	VP1P0_PHY0		 1001	n/a
+	host	VP3P3_SUPR		 3298	n/a
+	host	VP1P0_LF1		 1000	n/a
+	host	VP1P0_LF0		 1000	n/a
+	host	VP1P8_TCAM_IO		 1800	n/a
+	host	VP0P9_TCAM_CORE		  901	n/a
+	host	IBV_SENS		11390	n/a
+	host	VP1P0_XGE_CORE		  975	n/a
+	host	VP1P0_PHY5		 1000	n/a
+	host	VP1P0_PHY4		  999	n/a
+	host	VP1P0_PHY3		 1001	n/a
+	host	VP1P2_LF_IPU		 1201	n/a
+	host	VP0P9_TCAM_VDDS		  900	n/a
+	host	VP0P9_TCAM_VTT		  901	n/a
+	host	VP0P9_TS0_VDD		  926	n/a
+
+0/FC0/*
+	host	FLTR_V_SEN_IBV		 9608	n/a
+	host	FLTR_V_SEN_P7V		 7001	n/a
+	host	FLTR_V_SEN_P5V		 5001	n/a
+	host	FLTR_V_SEN_VP3P3_CAN	 3300	n/a
+	host	FLTR_V_SEN_P2_5V	 2500	n/a
+	host	FLTR_V_SEN_P1_2V	 1199	n/a
+	host	FLTR_V_SEN_P0_9V	  899	n/a
+	host	FLTR_V_SEN_P1V		 1000	n/a
+	host	FLTR_V_SEN_P3_3V	 3299	n/a
+	host	FLTR_V_SEN_P1_8V	 1800	n/a
+	host	FLTR_V_SEN_P1_5V	 1500	n/a
+	host	LDO_P1P0_SM15_0_PLLVDD_SENSE	 1000	n/a
+	host	LDO_P1P0_SM15_1_PLLVDD_SENSE	  999	n/a
+	host	PMOD1_1VA1A_VSENSE	 1000	n/a
+	host	PMOD1_1VA1B_VSENSE	 1002	n/a
+	host	PMOD2_1VB1A_VSENSE	  999	n/a
+	host	PMOD2_1VB1B_VSENSE	 1001	n/a
+	host	PMOD3_0_9VA1A_VSENSE	  875	n/a
+	host	PMOD3_0_9VA1B_VSENSE	  877	n/a
+	host	PMOD4_0_9VA1A_VSENSE	  875	n/a
+	host	PMOD4_0_9VA1B_VSENSE	  877	n/a
+	host	PMOD5_0_9VB1A_VSENSE	  824	n/a
+	host	PMOD5_0_9VB1B_VSENSE	  827	n/a
+	host	PMOD6_0_9VB1A_VSENSE	  824	n/a
+	host	PMOD6_0_9VB1B_VSENSE	  826	n/a
+
+0/FC1/*
+	host	FLTR_V_SEN_IBV		 9642	n/a
+	host	FLTR_V_SEN_P7V		 7002	n/a
+	host	FLTR_V_SEN_P5V		 4999	n/a
+	host	FLTR_V_SEN_VP3P3_CAN	 3299	n/a
+	host	FLTR_V_SEN_P2_5V	 2500	n/a
+	host	FLTR_V_SEN_P1_2V	 1199	n/a
+	host	FLTR_V_SEN_P0_9V	  900	n/a
+	host	FLTR_V_SEN_P1V		  999	n/a
+	host	FLTR_V_SEN_P3_3V	 3299	n/a
+	host	FLTR_V_SEN_P1_8V	 1800	n/a
+	host	FLTR_V_SEN_P1_5V	 1499	n/a
+	host	LDO_P1P0_SM15_0_PLLVDD_SENSE	 1000	n/a
+	host	LDO_P1P0_SM15_1_PLLVDD_SENSE	 1000	n/a
+	host	PMOD1_1VA1A_VSENSE	 1000	n/a
+	host	PMOD1_1VA1B_VSENSE	 1001	n/a
+	host	PMOD2_1VB1A_VSENSE	  999	n/a
+	host	PMOD2_1VB1B_VSENSE	 1001	n/a
+	host	PMOD3_0_9VA1A_VSENSE	  825	n/a
+	host	PMOD3_0_9VA1B_VSENSE	  827	n/a
+	host	PMOD4_0_9VA1A_VSENSE	  825	n/a
+	host	PMOD4_0_9VA1B_VSENSE	  827	n/a
+	host	PMOD5_0_9VB1A_VSENSE	  849	n/a
+	host	PMOD5_0_9VB1B_VSENSE	  852	n/a
+	host	PMOD6_0_9VB1A_VSENSE	  849	n/a
+	host	PMOD6_0_9VB1B_VSENSE	  851	n/a
+
+0/FC2/*
+	host	FLTR_V_SEN_IBV		 9581	n/a
+	host	FLTR_V_SEN_P7V		 6998	n/a
+	host	FLTR_V_SEN_P5V		 4998	n/a
+	host	FLTR_V_SEN_VP3P3_CAN	 3299	n/a
+	host	FLTR_V_SEN_P2_5V	 2499	n/a
+	host	FLTR_V_SEN_P1_2V	 1199	n/a
+	host	FLTR_V_SEN_P0_9V	  900	n/a
+	host	FLTR_V_SEN_P1V		 1000	n/a
+	host	FLTR_V_SEN_P3_3V	 3299	n/a
+	host	FLTR_V_SEN_P1_8V	 1799	n/a
+	host	FLTR_V_SEN_P1_5V	 1499	n/a
+	host	LDO_P1P0_SM15_0_PLLVDD_SENSE	 1000	n/a
+	host	LDO_P1P0_SM15_1_PLLVDD_SENSE	 1000	n/a
+	host	PMOD1_1VA1A_VSENSE	 1000	n/a
+	host	PMOD1_1VA1B_VSENSE	 1001	n/a
+	host	PMOD2_1VB1A_VSENSE	  999	n/a
+	host	PMOD2_1VB1B_VSENSE	 1001	n/a
+	host	PMOD3_0_9VA1A_VSENSE	  823	n/a
+	host	PMOD3_0_9VA1B_VSENSE	  826	n/a
+	host	PMOD4_0_9VA1A_VSENSE	  824	n/a
+	host	PMOD4_0_9VA1B_VSENSE	  827	n/a
+	host	PMOD5_0_9VB1A_VSENSE	  900	n/a
+	host	PMOD5_0_9VB1B_VSENSE	  903	n/a
+	host	PMOD6_0_9VB1A_VSENSE	  899	n/a
+	host	PMOD6_0_9VB1B_VSENSE	  901	n/a
+
+0/FC3/*
+	host	FLTR_V_SEN_IBV		 9622	n/a
+	host	FLTR_V_SEN_P7V		 6998	n/a
+	host	FLTR_V_SEN_P5V		 4998	n/a
+	host	FLTR_V_SEN_VP3P3_CAN	 3299	n/a
+	host	FLTR_V_SEN_P2_5V	 2499	n/a
+	host	FLTR_V_SEN_P1_2V	 1200	n/a
+	host	FLTR_V_SEN_P0_9V	  900	n/a
+	host	FLTR_V_SEN_P1V		  999	n/a
+	host	FLTR_V_SEN_P3_3V	 3300	n/a
+	host	FLTR_V_SEN_P1_8V	 1799	n/a
+	host	FLTR_V_SEN_P1_5V	 1499	n/a
+	host	LDO_P1P0_SM15_0_PLLVDD_SENSE	 1000	n/a
+	host	LDO_P1P0_SM15_1_PLLVDD_SENSE	 1000	n/a
+	host	PMOD1_1VA1A_VSENSE	 1000	n/a
+	host	PMOD1_1VA1B_VSENSE	 1001	n/a
+	host	PMOD2_1VB1A_VSENSE	 1000	n/a
+	host	PMOD2_1VB1B_VSENSE	 1001	n/a
+	host	PMOD3_0_9VA1A_VSENSE	  874	n/a
+	host	PMOD3_0_9VA1B_VSENSE	  877	n/a
+	host	PMOD4_0_9VA1A_VSENSE	  875	n/a
+	host	PMOD4_0_9VA1B_VSENSE	  878	n/a
+	host	PMOD5_0_9VB1A_VSENSE	  824	n/a
+	host	PMOD5_0_9VB1B_VSENSE	  827	n/a
+	host	PMOD6_0_9VB1A_VSENSE	  824	n/a
+	host	PMOD6_0_9VB1B_VSENSE	  827	n/a
+
+0/FC4/*
+	host	FLTR_V_SEN_IBV		 9638	n/a
+	host	FLTR_V_SEN_P7V		 7000	n/a
+	host	FLTR_V_SEN_P5V		 4998	n/a
+	host	FLTR_V_SEN_VP3P3_CAN	 3299	n/a
+	host	FLTR_V_SEN_P2_5V	 2500	n/a
+	host	FLTR_V_SEN_P1_2V	 1200	n/a
+	host	FLTR_V_SEN_P0_9V	  900	n/a
+	host	FLTR_V_SEN_P1V		 1000	n/a
+	host	FLTR_V_SEN_P3_3V	 3300	n/a
+	host	FLTR_V_SEN_P1_8V	 1799	n/a
+	host	FLTR_V_SEN_P1_5V	 1500	n/a
+	host	LDO_P1P0_SM15_0_PLLVDD_SENSE	 1000	n/a
+	host	LDO_P1P0_SM15_1_PLLVDD_SENSE	  999	n/a
+	host	PMOD1_1VA1A_VSENSE	 1000	n/a
+	host	PMOD1_1VA1B_VSENSE	 1001	n/a
+	host	PMOD2_1VB1A_VSENSE	  999	n/a
+	host	PMOD2_1VB1B_VSENSE	 1001	n/a
+	host	PMOD3_0_9VA1A_VSENSE	  849	n/a
+	host	PMOD3_0_9VA1B_VSENSE	  852	n/a
+	host	PMOD4_0_9VA1A_VSENSE	  849	n/a
+	host	PMOD4_0_9VA1B_VSENSE	  852	n/a
+	host	PMOD5_0_9VB1A_VSENSE	  849	n/a
+	host	PMOD5_0_9VB1B_VSENSE	  852	n/a
+	host	PMOD6_0_9VB1A_VSENSE	  849	n/a
+	host	PMOD6_0_9VB1B_VSENSE	  852	n/a
+
+
+
+0/BPID0/*
+
+0/FT0/*
+
+0/FT1/*
+
+
+LED Information
+---------------------------------------------
+
+R/S/I 	Modules	LED		Status
+0/RP0/*
+	host	Critical-Alarm	Off
+	host	Major-Alarm	Off
+	host	Minor-Alarm	Off
+	host	ACO		Off
+	host	Fail		Off
+	host	FC-FAULT	Off
+0/RP1/*
+	host	Critical-Alarm	Off
+	host	Major-Alarm	Off
+	host	Minor-Alarm	Off
+	host	ACO		Off
+	host	Fail		Off
+	host	FC-FAULT	Off
+
+BMC  Information
+---------------------------------------------
+
+
+Fan Information
+---------------------------------------------
+
+  Fan speed (rpm) and run time (in hours) :
+  	FAN0	FAN1	FAN2	FAN3	FAN4	FAN5	FAN6	FAN7	FAN8	FAN9	FAN10	FAN11
+
+0/FT0/* (Speed) 
+	4830	4860	4980	4980	4950	4860	4950	4830	4860	4830	4890	4830
+0/FT0/* (Run Time) 
+	925	925	925	925	925	925	925	925	925	925	925	925
+0/FT1/* (Speed) 
+	4770	4800	4770	4860	4950	4890	4860	4890	4830	4890	4830	4890
+0/FT1/* (Run Time) 
+	925	925	925	925	925	925	925	925	925	925	925	925
+Power Supply Information
+---------------------------------------------
+
+R/S/I 	Modules		Capacity	Status
+			(W)
+0/PS0/M0/*
+	host	PM	6000		Ok
+
+0/PS0/M1/*
+	host	PM	6000		Ok
+
+0/PS0/M2/*
+	host	PM	3000		Ok
+
+0/PS1/M0/*
+	host	PM	6000		Ok
+
+0/PS1/M1/*
+	host	PM	6000		Ok
+
+0/PS1/M2/*
+	host	PM	6000		Ok
+
+0/PS2/M0/*
+	host	PM	6000		Ok
+
+0/PS2/M1/*
+	host	PM	3000		Ok
+
+0/PS2/M2/*
+	host	PM	6000		Ok
+
+
+R/S/I 		Power Supply	Voltage		Current
+		(W)		(V)		(A)
+0/PS0/M0/*  	 342.8		55.3		 6.2
+0/PS0/M1/*  	 404.4		55.4		 7.3
+0/PS0/M2/*  	 160.6		55.4		 2.9
+0/PS1/M0/*  	 388.5		55.5		 7.0
+0/PS1/M1/*  	 321.9		55.5		 5.8
+0/PS1/M2/*  	 337.3		55.3		 6.1
+0/PS2/M0/*  	 427.3		55.5		 7.7
+0/PS2/M1/*  	 177.2		55.4		 3.2
+0/PS2/M2/*  	 413.2		55.1		 7.5
+--------------
+Total:	2973.2
+
+
+R/S/I 		Power Draw	Voltage		Current
+		(W)		(V)		(A)
+ 0/FT0/*  	 900 **
+ 0/FT1/*  	 900 **
+--------------
+Total:	1800.0
+
+
+R/S/I 		Power Draw	Voltage		Current
+		(W)		(V)		(A)
+ 0/FC0/*  	  55.1		55.1		 1.0
+ 0/FC1/*  	  55.1		55.1		 1.0
+ 0/FC2/*  	  60.9		55.4		 1.1
+ 0/FC3/*  	  55.0		55.0		 1.0
+ 0/FC4/*  	  55.0		55.0		 1.0
+--------------
+Total:	281.1
+
+
+R/S/I 		Power Draw	Voltage		Current
+		(W)		(V)		(A)
+ 0/RP0/*  	 232.2		55.3		 4.2
+ 0/RP1/*  	 231.8		55.2		 4.2
+--------------
+Total:	464.0
+
+
+R/S/I 		Power Draw	Voltage		Current
+		(W)		(V)		(A)
+   0/0/*  	 651.3		55.2		11.8
+   0/2/*  	 663.6		55.3		12.0
+   0/9/*  	 575.1		55.3		10.4
+--------------
+Total:	1890.0
+** Indicates worst case power draw (No power measuring sensor)
+
+Chassis Power Draw for rack 0: 2973.2 (W)
+
+Power Budget Summary for Rack 0
+--------------------------------
+
+
+Power Shelves Type: AC
+Power Budget Strict Mode: Disabled 
+
+Total Power Capacity:				48000W
+Usable Power Capacity:				24000W
+N+1 Supply Failure Protected Capacity:		24000W
+N+N Supply Failure Protected Capacity:		24000W
+Worst Case Power Used:				5675W
+
+ Slot							   Max Watts
+ ----							   ---------
+ 0/RP0/CPU0							 400
+ 0/RP1/CPU0							 400
+ 0/0/CPU0							 875
+ 0/2/CPU0							 875
+ 0/9/CPU0							 810
+ 0/FC0/SP							 103
+ 0/FC1/SP							 103
+ 0/FC2/SP							 103
+ 0/FC3/SP							 103
+ 0/FC4/SP							 103
+ 0/FT0/SP							 900
+ 0/FT1/SP							 900
+
+Worst Case Power Available:		18325W
+N+1 Supply Protected Capacity Available:	18325W
+N+N Supply Protected Capacity Available:	18325W
+
+
+Altitude Information
+---------------------------------------------
+
+Altitude: 
+*0/**/*
+ 38 meters below sea level
+
+
+------------ admin show env all [19:31:06.785 EDT Thu Sep 27 2018] ------------
+
+
+
++++ admin show diagnostic result location all [19:31:06.818 EDT Thu Sep 27 2018] ++++
+
+
+
+A99-RP2-TR 0/RP0/CPU0: 
+
+  Overall diagnostic result: PASS
+  Diagnostic level at card bootup: minimal
+
+  Test results: (. = Pass, F = Fail, U = Untested)
+
+  1  ) SrspStandbyEobcHeartbeat --------> .
+  2  ) SrspActiveEobcHeartbeat ---------> .
+  3  ) FabricLoopback ------------------> .
+  4  ) PuntFabricDataPath --------------> .
+  5  ) CPUCtrlScratchRegister ----------> .
+  6  ) DeviceCtrlScratchRegister -------> .
+  7  ) ClkCtrlScratchRegister ----------> .
+  8  ) NVRAMScratchRegister ------------> .
+  9  ) RPFabSwitchIdRegister -----------> .
+  10 ) FC0FabSwitchIdRegister ----------> .
+  11 ) FC1FabSwitchIdRegister ----------> .
+  12 ) FC2FabSwitchIdRegister ----------> .
+  13 ) FC3FabSwitchIdRegister ----------> .
+  14 ) FC4FabSwitchIdRegister ----------> .
+  15 ) FC5FabSwitchIdRegister ----------> U
+  16 ) FC6FabSwitchIdRegister ----------> U
+
+
+A99-RP2-TR 0/RP1/CPU0: 
+
+  Overall diagnostic result: PASS
+  Diagnostic level at card bootup: minimal
+
+  Test results: (. = Pass, F = Fail, U = Untested)
+
+  1  ) SrspStandbyEobcHeartbeat --------> .
+  2  ) SrspActiveEobcHeartbeat ---------> .
+  3  ) FabricLoopback ------------------> .
+  4  ) PuntFabricDataPath --------------> .
+  5  ) CPUCtrlScratchRegister ----------> .
+  6  ) DeviceCtrlScratchRegister -------> .
+  7  ) ClkCtrlScratchRegister ----------> .
+  8  ) NVRAMScratchRegister ------------> U
+  9  ) RPFabSwitchIdRegister -----------> .
+  10 ) FC0FabSwitchIdRegister ----------> U
+  11 ) FC1FabSwitchIdRegister ----------> U
+  12 ) FC2FabSwitchIdRegister ----------> U
+  13 ) FC3FabSwitchIdRegister ----------> U
+  14 ) FC4FabSwitchIdRegister ----------> U
+  15 ) FC5FabSwitchIdRegister ----------> U
+  16 ) FC6FabSwitchIdRegister ----------> U
+
+
+A9K-2x100GE-TR 0/0/CPU0: 
+
+  Overall diagnostic result: PASS
+  Diagnostic level at card bootup: bypass
+
+  Test results: (. = Pass, F = Fail, U = Untested)
+
+  1  ) CPUCtrlScratchRegister ----------> .
+  2  ) DBCtrlScratchRegister -----------> .
+  3  ) PortCtrlScratchRegister ---------> .
+  4  ) FIAScratchRegister --------------> .
+  5  ) LcEobcHeartbeat -----------------> .
+  6  ) NPULoopback ---------------------> .
+
+
+A9K-2x100GE-TR 0/2/CPU0: 
+
+  Overall diagnostic result: PASS
+  Diagnostic level at card bootup: bypass
+
+  Test results: (. = Pass, F = Fail, U = Untested)
+
+  1  ) CPUCtrlScratchRegister ----------> .
+  2  ) DBCtrlScratchRegister -----------> .
+  3  ) PortCtrlScratchRegister ---------> .
+  4  ) FIAScratchRegister --------------> .
+  5  ) LcEobcHeartbeat -----------------> .
+  6  ) NPULoopback ---------------------> .
+
+
+A9K-48X10GE-1G-TR 0/9/CPU0: 
+
+  Overall diagnostic result: PASS
+  Diagnostic level at card bootup: bypass
+
+  Test results: (. = Pass, F = Fail, U = Untested)
+
+  1  ) CPUCtrlScratchRegister ----------> .
+  2  ) PortCtrlScratchRegister ---------> .
+  3  ) PHYScratchRegister --------------> .
+  4  ) LcEobcHeartbeat -----------------> .
+  5  ) NPULoopback ---------------------> .
+
+
+
+--- admin show diagnostic result location all [19:31:07.054 EDT Thu Sep 27 2018] ----
+
+
+
+++++++++++ sh nv satellite status [19:31:07.086 EDT Thu Sep 27 2018] ++++++++++
+
+No satellites are configured.
+
+
+---------- sh nv satellite status [19:31:07.344 EDT Thu Sep 27 2018] ----------
+
+
+
++++++++++++++ admin show diag [19:31:07.389 EDT Thu Sep 27 2018] ++++++++++++++
+
+
+NODE module 0/RP0/CPU0  ASR 99 Route Processor for Packet Transport
+
+  MAIN:  board type 0x100326
+  S/N:   FOC2020N2J0
+  Top Assy. Number:   68-5052-04
+  PID:   A99-RP2-TR
+  HwRev (UDI_VID):   V02
+  Chip HwRev: V1.0
+  New Deviation Number: 8
+  CLEI:  IPUCBKWBAB
+  Board State : IOS XR RUN
+  PLD:    Motherboard: N/A, Processor version: 0x0 (rev: 2.174), Power: N/A
+  MONLIB: 
+  ROMMON: Version 14.29 [ASR9K x86 ROMMON],
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    FabSwitch0  : V1.2
+    FabArbiter  : V0.1
+    FIA  : V0.2
+    IPU  : V0.57
+    PuntFPGA  : V0.6
+    ClkCtrl  : V0.16
+    CpuCtrl  : V0.12
+    DeviceCtrl  : V0.0
+    HD  : V119.34
+    USB0  : V119.34
+    DTI  : V4.9
+    LIU  : V0.0
+    CBC (active partition)  : v35.12
+    CBC (inactive partition)  : v35.12
+
+NODE module 0/RP1/CPU0  ASR 99 Route Processor for Packet Transport
+
+  MAIN:  board type 0x100326
+  S/N:   FOC2219NCJ2
+  Top Assy. Number:   68-5052-07
+  PID:   A99-RP2-TR
+  HwRev (UDI_VID):   V05
+  Chip HwRev: V1.0
+  New Deviation Number: 103
+  CLEI:  IPUCBKWBAE
+  Board State : IOS XR RUN
+  PLD:    Motherboard: N/A, Processor version: 0x0 (rev: 2.174), Power: N/A
+  MONLIB: 
+  ROMMON: Version 14.29 [ASR9K x86 ROMMON],
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    FabSwitch0  : V1.2
+    FabArbiter  : V0.1
+    FIA  : V0.3
+    IPU  : V0.57
+    PuntFPGA  : V0.6
+    ClkCtrl  : V0.16
+    CpuCtrl  : V0.12
+    DeviceCtrl  : V0.0
+    HD  : V17.0
+    USB0  : V17.0
+    DTI  : V4.9
+    LIU  : V0.0
+    CBC (active partition)  : v35.12
+    CBC (inactive partition)  : v35.12
+
+NODE fantray 0/FT0/SP  ASR 9912 Fan Tray
+
+  MAIN:  board type 0x900214
+  S/N:   FOC2220PE2J
+  Top Assy. Number:   68-4489-03
+  PID:   ASR-9912-FAN
+  HwRev (UDI_VID):   V02
+  Chip HwRev: V1.0
+  New Deviation Number: 0
+  CLEI:  IPUCBEUBAB
+  Vendor ID: 0
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    CBC (active partition)  : v31.5 
+    CBC (inactive partition)  : v31.4 
+
+NODE fantray 0/FT1/SP  ASR 9912 Fan Tray
+
+  MAIN:  board type 0x900214
+  S/N:   FOC2220PE2N
+  Top Assy. Number:   68-4489-03
+  PID:   ASR-9912-FAN
+  HwRev (UDI_VID):   V02
+  Chip HwRev: V1.0
+  New Deviation Number: 0
+  CLEI:  IPUCBEUBAB
+  Vendor ID: 0
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    CBC (active partition)  : v31.5 
+    CBC (inactive partition)  : v31.4 
+
+NODE module 0/0/CPU0  2-port 100GE, Packet Transport Optimized LC
+
+  MAIN:  board type 0x280251
+  S/N:   FOC2001N9F1
+  Top Assy. Number:   68-5237-02
+  PCA:   73-16150-02 
+  PID:   A9K-2X100GE-TR
+  HwRev (UDI_VID):   V07
+  Chip HwRev: V1.0
+  New Deviation Number: 0
+  CLEI:  IPUIBWWRAB
+  Board State : IOS XR RUN
+  PLD:    Motherboard: N/A, Processor version: 0x2380 (rev: 0.0), Power: N/A
+  ROMMON: Version 3.3(20150930:043930) [ASR9K ROMMON]
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    NP0  : V4.194
+    NP1  : V4.194
+    NP2  : V4.194
+    NP3  : V4.194
+    FIA0  : V0.2
+    FIA1  : V0.2
+    FIA2  : V0.2
+    FIA3  : V0.2
+    X-Bar  : V1.5
+    Arbiter  : V0.2
+    I-MUX0  : V1.4
+    I-MUX1  : V1.4
+    E-MUX0  : V0.0
+    E-MUX1  : V0.0
+    PCIE  : V0.0
+    PuntFPGA  : V0.0
+    IOFPGA  : V1.3
+    JtagPld0  : V0.0
+    JtagPld1  : V0.0
+    MacPcsFPGA0  : V41.0
+    MacPcsFPGA1  : V41.0
+    PortCtrl  : V0.0
+    DBCtrl  : V0.0
+    2 Port 100 Gigabit Ethernet Daughter board  : V1.0
+    CBC (active partition)  : v21.111
+    CBC (inactive partition)  : v21.111
+
+NODE module 0/2/CPU0  2-port 100GE, Packet Transport Optimized LC
+
+  MAIN:  board type 0x280251
+  S/N:   FOC1818N1BK
+  Top Assy. Number:   68-4331-08
+  PCA:   73-14298-06 
+  PID:   A9K-2X100GE-TR
+  HwRev (UDI_VID):   V06
+  Chip HwRev: V1.100
+  New Deviation Number: 0
+  CLEI:  IPUIBWWRAA
+  Board State : IOS XR RUN
+  PLD:    Motherboard: N/A, Processor version: 0x2380 (rev: 0.0), Power: N/A
+  ROMMON: Version 3.3(20150930:043930) [ASR9K ROMMON]
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    NP0  : V4.194
+    NP1  : V4.194
+    NP2  : V4.194
+    NP3  : V4.194
+    FIA0  : V0.2
+    FIA1  : V0.2
+    FIA2  : V0.2
+    FIA3  : V0.2
+    X-Bar  : V1.5
+    Arbiter  : V0.2
+    I-MUX0  : V1.4
+    I-MUX1  : V1.4
+    E-MUX0  : V0.0
+    E-MUX1  : V0.0
+    PCIE  : V0.0
+    PuntFPGA  : V0.0
+    IOFPGA  : V1.3
+    JtagPld0  : V0.0
+    JtagPld1  : V0.0
+    MacPcsFPGA0  : V41.0
+    MacPcsFPGA1  : V41.0
+    PortCtrl  : V0.0
+    DBCtrl  : V0.0
+    2 Port 100 Gigabit Ethernet Daughter board  : V1.100
+    CBC (active partition)  : v21.111
+    CBC (inactive partition)  : v21.110
+
+NODE module 0/9/CPU0  48X10G/1G Packet Transport Optimized LC
+
+  MAIN:  board type 0x3d02ce
+  S/N:   FOC2218N8HN
+  Top Assy. Number:   68-6124-02
+  PCA:   73-17906-02 
+  PID:   A9K-48X10GE-1G-TR
+  HwRev (UDI_VID):   V01
+  Chip HwRev: V1.0
+  New Deviation Number: 103
+  CLEI:  IP9IAZSCAA
+  Board State : IOS XR RUN
+  PLD:    Motherboard: N/A, Processor version: 0x0 (rev: 2.174), Power: N/A
+  ROMMON: Version 18.22 [ASR9K x86 ROMMON],
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    NP0  : V92.34
+    NP1  : V92.34
+    FIA0  : V0.3
+    FIA1  : V0.3
+    FabSwitch  : V1.2
+    FabArbiter  : V0.1
+    IPU  : V0.13
+    PortCtrl  : V1.0
+    PortCtrl  : V1.0
+    LewisSwitch  : V1.0
+    PHY0  : V163.0(HwRev)	V39.0(FwRev)	V1.0(SwRev)
+    PHY1  : V163.0(HwRev)	V39.0(FwRev)	V1.0(SwRev)
+    PHY2  : V163.0(HwRev)	V39.0(FwRev)	V1.0(SwRev)
+    PHY3  : V163.0(HwRev)	V39.0(FwRev)	V1.0(SwRev)
+    PHY4  : V163.0(HwRev)	V39.0(FwRev)	V1.0(SwRev)
+    PHY5  : V163.0(HwRev)	V39.0(FwRev)	V1.0(SwRev)
+    CBC (active partition)  : v47.3 
+    CBC (inactive partition)  : v47.2 
+
+NODE power-module 0/PS0/M0/SP  6kW AC V3 Power Module
+
+  MAIN:  board type 0xf0038b
+  S/N:   DTM213101PT
+  Top Assy. Number:   341-0670-04
+  PID:   PWR-6KW-AC-V3
+  HwRev (UDI_VID):   V03
+  Chip HwRev: V0.0
+  New Deviation Number: 0
+  CLEI:  IPUPANRAAC
+  Board State : PRESENT
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+
+NODE power-module 0/PS0/M1/SP  6kW AC V3 Power Module
+
+  MAIN:  board type 0xf0038b
+  S/N:   DTM213101UP
+  Top Assy. Number:   341-0670-04
+  PID:   PWR-6KW-AC-V3
+  HwRev (UDI_VID):   V03
+  Chip HwRev: V0.0
+  New Deviation Number: 0
+  CLEI:  IPUPANRAAC
+  Board State : PRESENT
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+
+NODE power-module 0/PS0/M2/SP  6kW AC V3 Power Module
+
+  MAIN:  board type 0xf0038b
+  S/N:   DTM213101UC
+  Top Assy. Number:   341-0670-04
+  PID:   PWR-6KW-AC-V3
+  HwRev (UDI_VID):   V03
+  Chip HwRev: V0.0
+  New Deviation Number: 0
+  CLEI:  IPUPANRAAC
+  Board State : PRESENT
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+
+NODE power-module 0/PS1/M0/SP  6kW AC V3 Power Module
+
+  MAIN:  board type 0xf0038b
+  S/N:   DTM213101TX
+  Top Assy. Number:   341-0670-04
+  PID:   PWR-6KW-AC-V3
+  HwRev (UDI_VID):   V03
+  Chip HwRev: V0.0
+  New Deviation Number: 0
+  CLEI:  IPUPANRAAC
+  Board State : PRESENT
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+
+NODE power-module 0/PS1/M1/SP  6kW AC V3 Power Module
+
+  MAIN:  board type 0xf0038b
+  S/N:   DTM213101VF
+  Top Assy. Number:   341-0670-04
+  PID:   PWR-6KW-AC-V3
+  HwRev (UDI_VID):   V03
+  Chip HwRev: V0.0
+  New Deviation Number: 0
+  CLEI:  IPUPANRAAC
+  Board State : PRESENT
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+
+NODE power-module 0/PS1/M2/SP  6kW AC V3 Power Module
+
+  MAIN:  board type 0xf0038b
+  S/N:   DTM213101UW
+  Top Assy. Number:   341-0670-04
+  PID:   PWR-6KW-AC-V3
+  HwRev (UDI_VID):   V03
+  Chip HwRev: V0.0
+  New Deviation Number: 0
+  CLEI:  IPUPANRAAC
+  Board State : PRESENT
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+
+NODE power-module 0/PS2/M0/SP  6kW AC V3 Power Module
+
+  MAIN:  board type 0xf0038b
+  S/N:   DTM21430097
+  Top Assy. Number:   341-0670-04
+  PID:   PWR-6KW-AC-V3
+  HwRev (UDI_VID):   V03
+  Chip HwRev: V0.0
+  New Deviation Number: 0
+  CLEI:  IPUPANRAAC
+  Board State : PRESENT
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+
+NODE power-module 0/PS2/M1/SP  6kW AC V3 Power Module
+
+  MAIN:  board type 0xf0038b
+  S/N:   DTM213101VH
+  Top Assy. Number:   341-0670-04
+  PID:   PWR-6KW-AC-V3
+  HwRev (UDI_VID):   V03
+  Chip HwRev: V0.0
+  New Deviation Number: 0
+  CLEI:  IPUPANRAAC
+  Board State : PRESENT
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+
+NODE power-module 0/PS2/M2/SP  6kW AC V3 Power Module
+
+  MAIN:  board type 0xf0038b
+  S/N:   DTM213101UH
+  Top Assy. Number:   341-0670-04
+  PID:   PWR-6KW-AC-V3
+  HwRev (UDI_VID):   V03
+  Chip HwRev: V0.0
+  New Deviation Number: 0
+  CLEI:  IPUPANRAAC
+  Board State : PRESENT
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+
+NODE module 0/FC0/SP  ASR 9900 Series Switch Fabric Card 2
+
+  MAIN:  board type 0x400332
+  S/N:   FOC2221NDVS
+  Top Assy. Number:   68-4988-05
+  PID:   A99-SFC2
+  HwRev (UDI_VID):   V02 
+  Chip HwRev: V1.0
+  New Deviation Number: 103
+  CLEI:  IPUCBKYBAB
+  Board State : OK
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    FabSwitch0  : V1.2
+    FabSwitch1  : V1.2
+    IPU  : V0.32
+    CBC (active partition)  : v37.20
+    CBC (inactive partition)  : v37.20
+
+NODE module 0/FC1/SP  ASR 9900 Series Switch Fabric Card 2
+
+  MAIN:  board type 0x400332
+  S/N:   FOC2221NDTT
+  Top Assy. Number:   68-4988-05
+  PID:   A99-SFC2
+  HwRev (UDI_VID):   V02 
+  Chip HwRev: V1.0
+  New Deviation Number: 103
+  CLEI:  IPUCBKYBAB
+  Board State : OK
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    FabSwitch0  : V1.2
+    FabSwitch1  : V1.2
+    IPU  : V0.32
+    CBC (active partition)  : v37.20
+    CBC (inactive partition)  : v37.20
+
+NODE module 0/FC2/SP  ASR 9900 Series Switch Fabric Card 2
+
+  MAIN:  board type 0x400332
+  S/N:   FOC2147PC9A
+  Top Assy. Number:   68-4988-05
+  PID:   A99-SFC2
+  HwRev (UDI_VID):   V02 
+  Chip HwRev: V1.0
+  New Deviation Number: -27
+  CLEI:  IPUCBKYBAB
+  Board State : OK
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    FabSwitch0  : V1.2
+    FabSwitch1  : V1.2
+    IPU  : V0.32
+    CBC (active partition)  : v37.20
+    CBC (inactive partition)  : v37.20
+
+NODE module 0/FC3/SP  ASR 9900 Series Switch Fabric Card 2
+
+  MAIN:  board type 0x400332
+  S/N:   FOC2221NDU2
+  Top Assy. Number:   68-4988-05
+  PID:   A99-SFC2
+  HwRev (UDI_VID):   V02 
+  Chip HwRev: V1.0
+  New Deviation Number: 103
+  CLEI:  IPUCBKYBAB
+  Board State : OK
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    FabSwitch0  : V1.2
+    FabSwitch1  : V1.2
+    IPU  : V0.32
+    CBC (active partition)  : v37.20
+    CBC (inactive partition)  : v37.20
+
+NODE module 0/FC4/SP  ASR 9900 Series Switch Fabric Card 2
+
+  MAIN:  board type 0x400332
+  S/N:   FOC2221NDRY
+  Top Assy. Number:   68-4988-05
+  PID:   A99-SFC2
+  HwRev (UDI_VID):   V02 
+  Chip HwRev: V1.0
+  New Deviation Number: 103
+  CLEI:  IPUCBKYBAB
+  Board State : OK
+  PLD:    Motherboard: N/A, Processor version: N/A, Power: N/A
+  Board FPGA/CPLD/ASIC Hardware Revision:
+    FabSwitch0  : V1.2
+    FabSwitch1  : V1.2
+    IPU  : V0.32
+    CBC (active partition)  : v37.20
+    CBC (inactive partition)  : v37.20
+
+Rack 0 - ASR 9912 10 Line Card Slot Chassis with V3 AC PEM
+  RACK NUM: 0
+  S/N:   FOX2138P8UE
+  PID:   ASR-9912
+  VID:   V01
+  Desc:  ASR 9912 10 Line Card Slot Chassis with V3 AC PEM
+  CLEI:  IPM9100CRA
+  Top Assy. Number:   68-5766-01
+
+
+
+------------- admin show diag [19:31:10.657 EDT Thu Sep 27 2018] --------------
+
+
+
+++++++++++ show mem sum location [19:31:10.697 EDT Thu Sep 27 2018] +++++++++++
+
+
+node:      node0_0_CPU0
+------------------------------------------------------------------
+Physical Memory: 8192M total
+ Application Memory : 7992M (4650M available)
+ Image: 71M (bootram: 71M)
+ Reserved: 128M, IOMem: 0, flashfsys: 0
+ Total shared window: 178M
+
+node:      node0_2_CPU0
+------------------------------------------------------------------
+Physical Memory: 8192M total
+ Application Memory : 7992M (4662M available)
+ Image: 71M (bootram: 71M)
+ Reserved: 128M, IOMem: 0, flashfsys: 0
+ Total shared window: 178M
+
+node:      node0_9_CPU0
+------------------------------------------------------------------
+Physical Memory: 32768M total
+ Application Memory : 32431M (28597M available)
+ Image: 95M (bootram: 95M)
+ Reserved: 224M, IOMem: 0, flashfsys: 0
+ Total shared window: 132M
+
+node:      node0_RP0_CPU0
+------------------------------------------------------------------
+Physical Memory: 16384M total (12705M available)
+ Application Memory : 16014M (12705M available)
+ Image: 128M (bootram: 128M)
+ Reserved: 224M, IOMem: 0, flashfsys: 0
+ Total shared window: 51M
+
+node:      node0_RP1_CPU0
+------------------------------------------------------------------
+Physical Memory: 16384M total
+ Application Memory : 16014M (13383M available)
+ Image: 128M (bootram: 128M)
+ Reserved: 224M, IOMem: 0, flashfsys: 0
+ Total shared window: 49M
+
+
+---------- show mem sum location [19:31:12.220 EDT Thu Sep 27 2018] -----------
+
+
+
++++ show watchdog memory-state location all [19:31:12.260 EDT Thu Sep 27 2018] ++++
+
+---- node0_RP0_CPU0 ---
+Memory information:
+    Physical Memory: 16384     MB
+    Free Memory:     12706.50  MB
+    Memory State:         Normal
+---- node0_0_CPU0 ---
+Memory information:
+    Physical Memory: 8192     MB
+    Free Memory:     4650.250 MB
+    Memory State:         Normal
+---- node0_2_CPU0 ---
+Memory information:
+    Physical Memory: 8192     MB
+    Free Memory:     4662.832 MB
+    Memory State:         Normal
+---- node0_9_CPU0 ---
+Memory information:
+    Physical Memory: 32768     MB
+    Free Memory:     28597.203 MB
+    Memory State:         Normal
+---- node0_RP1_CPU0 ---
+Memory information:
+    Physical Memory: 16384     MB
+    Free Memory:     13383.906 MB
+    Memory State:         Normal
+
