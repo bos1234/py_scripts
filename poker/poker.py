@@ -9,7 +9,7 @@
 # nothing :                                   <0, 7, 5, 4, 3, 2>
 
 import itertools
-
+from pprint import pprint
 
 def poker(hands):
     # Return a list of winning hands: poker([hand,...]) => [hand,...]
@@ -18,15 +18,33 @@ def poker(hands):
 
 def allmax(iterable, key=None):
     # Return a list of all items equal to the max of the iterable
+    test_list = []
     result, maxval = [], None
     key = key or (lambda x: x)
     for x in iterable:
         xval = key(x)
-        if not result or xval > maxval:
+        if not result or xval != maxval:
             result, maxval = [x], xval
-        elif xval == maxval:
-            result.append(x)
+            test_list.append(x)
+
+    best_hands(test_list, key=hand_rank)
     return result
+
+def best_hands(myList, key=None):
+    key = key or (lambda x: x)
+    for i in range (0, len(myList) - 1):
+        for j, x in enumerate(myList):
+            if (j < (len(myList) - 1 - i)):
+            #for j in range(0, len(myList) - 1 - i):
+                # result, maxval = [], None
+                xval = key(x)
+                nextval = key(myList[j+1])
+                # if not result or xval != maxval:
+                #     result, maxval = [x], xval
+                if xval > nextval:
+                    myList[j], myList[j+1] = myList[j+1], myList[j]
+
+    remove_duplicate_ranks(myList)
 
 
 def hand_rank(hand):
@@ -87,6 +105,19 @@ def two_pair(ranks):
     else:
         return None
 
+def remove_duplicate_ranks(hands):
+    for index, cards in enumerate(hands):
+        if (index < len(hands) - 1):
+            if card_ranks(hands[index]) == card_ranks(hands[index+1]):
+                hands[index] = ['AAA']
+
+    while ['AAA'] in hands:
+        rem = ['AAA']
+        hands.remove(rem)
+
+    pprint(hands[::-1])
+
+
 # initiate the 52 dec of cards and deduct the flop
 flop = input('flop: ')
 flop = flop.split()
@@ -99,12 +130,13 @@ combinations = itertools.combinations(deck, 2)
 
 a = itertools.combinations(deck, 2)
 
+i = len(list(combinations))
 
-five_cards = [[] for x in range(50)]
+five_cards = [[] for x in range(i)]
 
 for index, c in enumerate(a):
     c = list(c)
     five_cards[index] = flop + c
 
 hands = five_cards
-print(poker(hands))
+poker(hands)
